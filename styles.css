@@ -6,12 +6,20 @@
     height: 90px;
     transform: translate(-50%, -50%);
     background-color: red;
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 74%, 18% 100%, 0% 38%);
+    clip-path: polygon(50% 0%, 90% 15%, 100% 50%, 90% 85%, 50% 100%, 10% 85%, 0% 50%, 10% 15%);
     animation: heartbeat 1s infinite;
-  }
-  
-  @keyframes heartbeat {
-    0% { transform: scale(0.9); }
-    50% { transform: scale(1); }
-    100% { transform: scale(0.9); }
-  }
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(0.8); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(0.8); }
+}
+
+.poem {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
