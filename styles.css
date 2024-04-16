@@ -1,33 +1,7 @@
 .heart {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100px;
-    height: 100px;
-    transform: translate(-50%, -50%);
-    background-color: red;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.heart::before,
-.heart::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    border-radius: 50%;
-}
-
-.heart::before {
-    top: -50px;
-    left: 0;
-}
-
-.heart::after {
-    top: 0;
-    left: 50px;
+    display: block;
+    margin: 0 auto; /* Isso centralizará a imagem horizontalmente */
+    max-width: 100%; /* Isso garantirá que a imagem não ultrapasse o contêiner */
 }
 
 .poem {
