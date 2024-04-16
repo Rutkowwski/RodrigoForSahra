@@ -1,13 +1,13 @@
 .heart {
     display: block;
     margin: 0 auto; /* Isso centralizará a imagem horizontalmente */
-    max-width: 100%; /* Isso garantirá que a imagem não ultrapasse o contêiner */
+    max-width: 80px; /* Reduzindo o tamanho máximo da imagem */
+    width: 100%; /* Fazendo a imagem ocupar 100% da largura do contêiner */
+    height: auto; /* Garantindo que a altura seja ajustada proporcionalmente à largura */
+    animation: pulse 1s infinite alternate; /* Adicionando animação de pulso */
 }
 
-.poem {
-    text-align: center;
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
+@keyframes pulse {
+    0% { transform: scale(0.9); }
+    100% { transform: scale(1.1); }
 }
