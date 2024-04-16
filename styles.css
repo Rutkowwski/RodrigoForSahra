@@ -1,0 +1,17 @@
+.heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 90px;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 74%, 18% 100%, 0% 38%);
+    animation: heartbeat 1s infinite;
+  }
+  
+  @keyframes heartbeat {
+    0% { transform: scale(0.9); }
+    50% { transform: scale(1); }
+    100% { transform: scale(0.9); }
+  }
