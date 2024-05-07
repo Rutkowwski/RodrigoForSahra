@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <img class="heart" src="coracao.jpg" alt="Coração">
-    <div class="poem">
+    <div id="poem" style="display: none;" class="poem">
       <p>Sahra, meu amor, fiz o momento poeminha um pouco diferente,</p> 
       <p>Espero que você goste.</p> 
       <p>Sahra, Sahricotinha,</p>
@@ -21,7 +21,10 @@
       <p>Que aquece minha alma em qualquer espaço.</p>
       <p>Com amor, seu futuro marido, Rodrigo Rutkowski Borba.</p>
     </div>
+    <button onclick="playMusic()">Reproduzir Música</button>
+    <button onclick="revealPoem()">Revelar Poema Surpresa</button>
   </div>
+  <audio id="myAudio" src="MAR ABERTO - De Repente É.mp3"></audio>
   <script src="script.js"></script>
 </body>
 </html>
