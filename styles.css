@@ -1,10 +1,27 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
 .heart {
-    display: block;
-    margin: 0 auto; /* Isso centralizará a imagem horizontalmente */
-    max-width: 200px; /* Aumentando o tamanho máximo da imagem */
-    width: 100%; /* Fazendo a imagem ocupar 100% da largura do contêiner */
-    height: auto; /* Garantindo que a altura seja ajustada proporcionalmente à largura */
-    animation: pulse 1s infinite alternate; /* Adicionando animação de pulso */
+    max-width: 200px; /* Ajuste o tamanho máximo conforme desejado */
+    width: 100%;
+    height: auto;
+    animation: pulse 1s infinite alternate;
+}
+
+.poem {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
 }
 
 @keyframes pulse {
