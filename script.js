@@ -1,14 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
-  setTimeout(function() {
-    document.querySelector('.heart').style.display = 'none';
-  }, 500000); // O coração desaparecerá após 50 segundos
+    // Oculta o coração após 50 segundos
+    setTimeout(function() {
+        var heart = document.querySelector('.heart');
+        if (heart) {
+            heart.style.display = 'none';
+        }
+    }, 50000); // O coração desaparecerá após 50 segundos (50000 milissegundos)
 });
+
+// Função para reproduzir música
 function playMusic() {
     var audio = document.getElementById("myAudio");
-    audio.play();
+    if (audio) {
+        audio.play();
+    }
 }
 
-function revealSurprise() {
-    var surpriseDiv = document.getElementById("surpriseMessage");
-    surpriseDiv.style.display = "block";
+// Função para revelar o poema
+function revealPoem() {
+    var poemDiv = document.getElementById("poem");
+    if (poemDiv) {
+        poemDiv.style.display = "block";
+    }
 }
