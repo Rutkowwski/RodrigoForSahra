@@ -1,7 +1,7 @@
 .heart {
     display: block;
     margin: 0 auto; /* Isso centralizará a imagem horizontalmente */
-    max-width: 120px; /* Aumentando o tamanho máximo da imagem */
+    max-width: 200px; /* Aumentando o tamanho máximo da imagem */
     width: 100%; /* Fazendo a imagem ocupar 100% da largura do contêiner */
     height: auto; /* Garantindo que a altura seja ajustada proporcionalmente à largura */
     animation: pulse 1s infinite alternate; /* Adicionando animação de pulso */
